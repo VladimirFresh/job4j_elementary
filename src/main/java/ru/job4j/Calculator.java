@@ -1,7 +1,5 @@
 package ru.job4j;
 
-import java.util.concurrent.SynchronousQueue;
-
 public class Calculator {
     public static void main(String[] args) {
         int one = 1;
