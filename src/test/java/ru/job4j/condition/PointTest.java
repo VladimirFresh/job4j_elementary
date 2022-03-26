@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class PointTest {
 
     @Test
-    public void When10to30Then2() {
+    public void when10to30Then2() {
         double expected = 2;
         int x1 = 1;
         int y1 = 0;
@@ -19,7 +19,7 @@ public class PointTest {
     }
 
     @Test
-    public void When30to70Then4() {
+    public void when30to70Then4() {
         double expected = 4;
         int x1 = 3;
         int y1 = 0;
@@ -30,7 +30,7 @@ public class PointTest {
     }
 
     @Test
-    public void When04to08Then4() {
+    public void when04to08Then4() {
         double expected = 4;
         int x1 = 0;
         int y1 = 4;
