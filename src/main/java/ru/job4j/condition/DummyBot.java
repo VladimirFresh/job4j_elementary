@@ -1,6 +1,5 @@
 package ru.job4j.condition;
 
-
 public class DummyBot {
 
     public static String answer(String question) {
