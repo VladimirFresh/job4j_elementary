@@ -14,20 +14,35 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHasNot10ThenMinus1() {
-        int[] data = {4, 6, 2, 8, 19, 22};
-        int el = 10;
-        int result = FindLoop.indexOf(data, el);
+    public void whenDiapasonHas2Then3() {
+        int[] data = new int[]{5, 2, 10, 2, 4};
+        int el = 2;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 3;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenDiapasonHasNot8ThenMinus1() {
+        int[] data = new int[]{4, 2, 5, 6, 8};
+        int el = 8;
+        int start = 0;
+        int finish = 3;
+        int result = FindLoop.indexInRange(data, el, start, finish);
         int expected = -1;
         Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void whenArrayHas22Then5() {
-        int[] data = {4, 6, 2, 8, 19, 22};
-        int el = 22;
-        int result = FindLoop.indexOf(data, el);
-        int expected = 5;
+    public void whenDiapasonHas5Then2() {
+        int[] data = new int[]{4, 2, 5, 6, 8};
+        int el = 5;
+        int start = 0;
+        int finish = 3;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 2;
         Assert.assertEquals(expected, result);
     }
 }
