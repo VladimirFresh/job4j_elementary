@@ -17,7 +17,6 @@ public class PushTheNumbers {
                 } else {
                     array[i][j] = array[i][j + 1];
                     }
-
                 }
             }
         for (int i = array.length - 1; i >= row; i--) {

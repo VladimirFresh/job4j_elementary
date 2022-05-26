@@ -29,10 +29,8 @@ public class Converter {
                     index++;
                 }
             }
-
         }
         return result;
-
     }
 
 }

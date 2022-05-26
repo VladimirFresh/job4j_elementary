@@ -24,7 +24,6 @@ public class Anomaly {
                 count++;
             }
         }
-
         return Arrays.copyOf(result, count);
     }
 }
